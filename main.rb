@@ -1,25 +1,41 @@
-# Define a method called say_hello_to. When you call the method, you should be able to see Hello, John Doe! in the console.
-# Add a parameter called name to the method you just created. Use the parameter to print out Hello,  follow by the parameter name. Use string interpolation to do this.
-# Outside of the say_hello_to method, create a constant variable called MY_NAME and set it to your name.
-# Call the method and add the MY_NAME variable as an argument.
-# Result:
-# > Hello, John
+# Read each comment and complete each task.
 
-# 1 
-#  def say_hello_to
-#   puts "Hello, John Doe!"
-#  end
-#  say_hello_to
+    # TODO: use string interpolation to print "My favorite movie is " and include the movie parameter.
+    # TODO: Call favorite_movie, pass in the parameter movie as an argument
 
-# 2
-#  def say_hello_to(name)
-#   puts "Hello, #{name}"
-#  end
-#  say_hello_to ("John")
-
-# 3
-MY_NAME = "Lance"
-def say_hello_to(name)
-  puts "Hello, #{name}"
+def favorite_movie(movie)
+  puts "My favorite movie is #{movie}"
 end
-say_hello_to (MY_NAME)
+favorite_movie("Old School")
+
+    # TODO: use string interpolation to print "My favorite food is " and include the food parameter.
+    # TODO: Call favorite_food, pass in the parameter food as an argument
+
+def favorite_food(food)
+  puts "My favorite food is #{food}"
+end
+favorite_food("Lobster Rolls")
+
+    # TODO: use string interpolation to print "My favorite drink is " and include the drink parameter.
+    # TODO: Call favorite_drink, pass in the parameter drink as an argument
+
+def favorite_drink(drink)
+  puts "My favorite drink is #{drink}"
+end
+favorite_drink("Cold Beer")
+
+puts "-----------------------------------------------------"
+
+# TODO: Call list_of_favorite_things, include three arguments
+ # TODO: Call favorite_movie, pass in the parameter movie as an argument
+ # TODO: Call favorite_food, pass in the parameter food as an argument
+ # TODO: Call favorite_drink, pass in the parameter drink as an argument
+
+def list_of_favorite_things(movie, food, drink)
+  favorite_movie(movie) 
+  favorite_food(food)
+  favorite_drink(drink)
+end
+ list_of_favorite_things("The Departed", "Lasagna", "Green Tea" )
+
+
